@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <style>
+        #login_div {
+            width: 50%;
+            margin: 40px;
+            padding: 20px;
+            text-align: center;
+            font-size: x-large;
+            border: red 1px solid;
+        }
+    </style>
+</head>
+<body>
+<div id="login_div">
+<!--    action路径写法 虚拟目录+servlet资源路径-->
+    <form id="login_form" action="/Case001LoginWithServlet_war_exploded/loginServlet" method="post">
+        <label>username: </label><input type="text" placeholder="username" name="userName"><br>
+        <label>password: </label><input type="password" placeholder="password" name="userPassword"><br>
+        <input type="submit" value="Submit!">
+    </form>
+</div>
+</body>
+</html>
